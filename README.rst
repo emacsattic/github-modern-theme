@@ -1,6 +1,6 @@
-GitHub Theme for Emacs
+GitHub Modern Theme for Emacs
 ######################
-This package provides a theme for Emacs, inspired by the GitHub website user interface.  It attempts to stay true to the GitHub syntax highlighting colors, while still looking good in every language inside Emacs.
+This package provides a theme for Emacs, inspired by the GitHub website user interface.  It attempts to stay true to the **new** (as of 2017) GitHub syntax highlighting colors, while still looking good in every language inside Emacs.
 
 .. image:: screenshots/github-modern-theme.png
 
