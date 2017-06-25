@@ -1,10 +1,10 @@
-;;; github-modern-theme.el --- The GitHub Modern color theme.
+;;; github-modern-theme.el --- The GitHub color theme for Emacs.
 
 ;; Copyright (C) 2016-2017 Philip Arvidsson
 
 ;; Author: Philip Arvidsson <philip@philiparvidsson.com>
-;; URL: https://github.com/philiparvidsson/GitHub-Modern-Theme-for-Emacs
-;; Version: 1.0
+;; URL: https://github.com/philiparvidsson/GitHub-Theme-for-Emacs
+;; Version: 2.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,7 +21,7 @@
 
 ;;; Commentary:
 
-;; This file is based on the Zenburn theme file by Bozhidar Batsov.
+;; An attempt at recreating the look and feel of the GitHub website and synax highlighting in Emacs.
 
 ;;; Credits:
 
@@ -29,19 +29,18 @@
 
 ;;; Code:
 
-(deftheme github-modern "The GitHub Modern color theme")
+(deftheme github-modern "The GitHub color theme")
 
 ;;; Color Palette
 
 (defvar github-default-colors-alist
-  '(("github-black"                  . "#000000")
-    ("github-border"                 . "#d0d0d0")
+  '(("github-border"                 . "#d0d0d0")
     ("github-comment"                . "#6a737d")
     ("github-constant"               . "#005cc5")
     ("github-diff-added"             . "#e6ffed")
     ("github-diff-added-highlight"   . "#acf2bd")
-    ("github-diff-changed"           . "#ffe1b9");; correct?
-    ("github-diff-changed-highlight" . "#ffc86f");; correct?
+    ("github-diff-changed"           . "#ffe1b9")
+    ("github-diff-changed-highlight" . "#ffc86f")
     ("github-diff-removed"           . "#ffeef0")
     ("github-diff-removed-highlight" . "#fdb8c0")
     ("github-function"               . "#6f42c1")
@@ -53,10 +52,7 @@
     ("github-text"                   . "#24292e")
     ("github-white"                  . "#ffffff"))
   "List of GitHub colors.
-Each element has the form (NAME . HEX).
-
-`+N' suffixes indicate a color is lighter.
-`-N' suffixes indicate a color is darker.")
+Each element has the form (NAME . HEX).")
 
 (defvar github-override-colors-alist
   '()
@@ -81,7 +77,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;; Theme Faces
 (github-with-color-variables
   (custom-theme-set-faces
-   'github-modern
+   'github
 ;;;; Built-in
 ;;;;; basic coloring
    '(button ((t (:underline t))))
@@ -131,10 +127,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(menu ((t (:foreground ,github-text :background ,github-white))))
    `(minibuffer-prompt ((t (:foreground ,github-keyword))))
    `(mode-line
-     ((,class (:foreground ,github-white
-                           :background ,github-keyword))
+     ((,class (:foreground ,github-header-fg
+                           :background ,github-header-bg))
       (t :inverse-video t)))
-   `(mode-line-buffer-id ((t (:foreground ,github-black :weight bold))))
+   `(mode-line-buffer-id ((t (:foreground ,github-white :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,github-comment
                       :background ,github-white
@@ -1220,14 +1216,14 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;;; elscreen
   `(elscreen-tab-background-face ((t (:background ,github-keyword))))
   `(elscreen-tab-control-face ((t (:foreground ,github-white :background ,github-keyword))))
-  `(elscreen-tab-current-screen-face ((t (:foreground ,github-black :background ,github-selection))))
+  `(elscreen-tab-current-screen-face ((t (:foreground ,github-text :background ,github-selection))))
   `(elscreen-tab-other-screen-face ((t (:foreground ,github-text :background ,github-highlight))))
   ))
 
 ;;; Theme Variables
 (github-with-color-variables
   (custom-theme-set-variables
-   'github-modern
+   'github
 ;;;;; ansi-color
    `(ansi-color-names-vector [,github-white ,github-string ,github-comment ,github-keyword
                                           ,github-comment ,github-comment ,github-function ,github-comment])
