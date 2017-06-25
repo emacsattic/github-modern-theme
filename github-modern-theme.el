@@ -77,7 +77,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;; Theme Faces
 (github-with-color-variables
   (custom-theme-set-faces
-   'github
+   'github-modern
 ;;;; Built-in
 ;;;;; basic coloring
    '(button ((t (:underline t))))
@@ -1223,7 +1223,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;; Theme Variables
 (github-with-color-variables
   (custom-theme-set-variables
-   'github
+   'github-modern
 ;;;;; ansi-color
    `(ansi-color-names-vector [,github-white ,github-string ,github-comment ,github-keyword
                                           ,github-comment ,github-comment ,github-function ,github-comment])
