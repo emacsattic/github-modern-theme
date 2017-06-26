@@ -44,6 +44,8 @@
     ("github-diff-removed"           . "#ffeef0")
     ("github-diff-removed-highlight" . "#fdb8c0")
     ("github-function"               . "#6f42c1")
+    ("github-header-bg"              . "#d73a49")
+    ("github-header-fg"              . "#ffffff")
     ("github-highlight"              . "#fffbdd")
     ("github-html-tag"               . "#22863a")
     ("github-keyword"                . "#d73a49")
