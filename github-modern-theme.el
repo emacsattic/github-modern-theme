@@ -4,6 +4,7 @@
 
 ;; Author: Philip Arvidsson <philip@philiparvidsson.com>
 ;; URL: https://github.com/philiparvidsson/GitHub-Theme-for-Emacs
+;; Package-Version: 20170624.2230
 ;; Version: 2.1
 
 ;; This program is free software; you can redistribute it and/or modify
@@ -45,6 +46,8 @@
     ("github-diff-removed-highlight" . "#fdb8c0")
     ("github-function"               . "#6f42c1")
     ("github-highlight"              . "#fffbdd")
+    ("github-header-bg"              . "#24292e")
+    ("github-header-fg"              . "#bcbdc0")
     ("github-html-tag"               . "#22863a")
     ("github-keyword"                . "#d73a49")
     ("github-selection"              . "#3390ff")
