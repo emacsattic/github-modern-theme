@@ -1,6 +1,8 @@
 # GitHub Modern Theme for Emacs
 This package provides a syntax highlighting theme for Emacs, inspired by the new GitHub theme colors. It attempts to stay true to the GitHub syntax highlighting colors, while still looking good in every language inside Emacs.
 
+**NOTE**: *If you prefer the classic GitHub colors, you might prefer [this theme](https://github.com/philiparvidsson/GitHub-Theme-for-Emacs) over this one.*
+
 ## Prerequisites
 * [Emacs](https://www.gnu.org/software/emacs/) — An extensible, customizable, free/libre text editor — and more.
 
@@ -25,7 +27,7 @@ To enable the theme, Emacs must be instructed to load it:
 
 If you want to apply the theme automatically when Emacs starts, make sure to add the following in your `init.el` file:
 
-`(load-theme github-modern t)`
+`(load-theme 'github-modern t)`
 
-### Screenshot
+## Screenshot
 ![](screenshots/github-modern-theme.png)
