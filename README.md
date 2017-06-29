@@ -27,5 +27,5 @@ If you want to apply the theme automatically when Emacs starts, make sure to add
 
 `(load-theme github-modern t)`
 
-### Screenshot
+## Screenshot
 ![](screenshots/github-modern-theme.png)
