@@ -135,7 +135,7 @@ Also bind `class' to ((class color) (min-colors 89))."
      ((,class (:foreground ,github-header-fg
                            :background ,github-header-bg))
       (t :inverse-video t)))
-   `(mode-line-buffer-id ((t (:foreground ,github-white :weight bold))))
+   `(mode-line-buffer-id ((t (:foreground ,github-white :distant-foreground ,github-comment :weight bold))))
    `(mode-line-inactive
      ((t (:foreground ,github-comment
                       :background ,github-white
